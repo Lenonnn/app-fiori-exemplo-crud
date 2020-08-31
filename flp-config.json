@@ -1,0 +1,35 @@
+{
+    "application": {
+        "id": "",
+        "title": "App_CRUD.AplicacaoCRUD.AplicacaoCRUD",
+        "description": "App CRUD",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#AplicacaoCRUD-Display",
+        "navigationComponentName": "App_CRUD.AplicacaoCRUD",
+        "intentSemanticObject": "AplicacaoCRUD",
+        "intentAction": "Display",
+        "html5ApplicationName": "aplicacaocrud",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "110b5ee8-720c-4250-ba91-aebdebddd36a"
+        ],
+        "contentPackages": [
+            "644f160b-ce00-4f0c-892a-ee830f5a0ce9"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "App CRUD",
+        "subtitle": "Aplicação CRUD",
+        "searchKeywords": "App CRUD,Aplicação CRUD",
+        "displayIconUrl": "sap-icon://accept",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}

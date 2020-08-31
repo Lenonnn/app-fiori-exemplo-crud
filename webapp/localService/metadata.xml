@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+	<edmx:Reference
+		Uri="https://webidecp-p2001897897trial.dispatcher.hanatrial.ondemand.com/destinations/S43_999/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/></edmx:Reference>
+	<edmx:Reference
+		Uri="https://webidecp-p2001897897trial.dispatcher.hanatrial.ondemand.com/destinations/S43_999/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CAPABILITIES',Version='0001',SAP__Origin='LOCAL')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="Capabilities"/></edmx:Reference>
+	<edmx:Reference
+		Uri="https://webidecp-p2001897897trial.dispatcher.hanatrial.ondemand.com/destinations/S43_999/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='LOCAL')/$value"
+		xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"><edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/></edmx:Reference>
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema Namespace="ZCDSCRUD_ABAP07_CDS" xml:lang="pt" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityType Name="Zcdscrud_abap07Type" sap:content-version="1">
+				<Key><PropertyRef Name="uname"/></Key><Property Name="uname" Type="Edm.String" Nullable="false" MaxLength="12" sap:display-format="UpperCase" sap:label="Nome do usuário"/><Property Name="dats" Type="Edm.DateTime" Precision="0" sap:display-format="Date" sap:label="Data" sap:quickinfo="Campo do tipo DATS"/><Property Name="tims" Type="Edm.Time" Precision="0" sap:label="" sap:quickinfo="Campo da ctg.TIMS"/></EntityType>
+			<EntityContainer Name="ZCDSCRUD_ABAP07_CDS_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="Zcdscrud_abap07" EntityType="ZCDSCRUD_ABAP07_CDS.Zcdscrud_abap07Type" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:content-version="1"/></EntityContainer><atom:link rel="self"
+				href="https://webidecp-p2001897897trial.dispatcher.hanatrial.ondemand.com/destinations/S43_999/sap/opu/odata/sap/ZCDSCRUD_ABAP07_CDS/$metadata"
+				xmlns:atom="http://www.w3.org/2005/Atom"/><atom:link rel="latest-version"
+				href="https://webidecp-p2001897897trial.dispatcher.hanatrial.ondemand.com/destinations/S43_999/sap/opu/odata/sap/ZCDSCRUD_ABAP07_CDS/$metadata"
+				xmlns:atom="http://www.w3.org/2005/Atom"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
